@@ -18,6 +18,12 @@ Connection between the lower and upper levels is also possible through 2 transpo
 
 The walkable area have 10 small, randomly placed (different on each gameplay) and non-overlapping obstacles. Obstacle boundaries are simple geometric shapes, but with some variation in either shape or orientation.
 
-Populate the area with n NPCs, where n is a simulation (editor) parameter. NPCs are spawned at random, non-overlapping, locations anywhere in the non-obstacle game space, but not in the waiting areas. Each NPC follows the same rote behaviour, consisting of repeatedly doing the following: (1) choose a random destination (any non-obstacle location other than the waiting areas, and ignoring other NPCs) (2) make a plan to move to it and follow it, (3) pause for 200–1000ms once they arrive.
+Populate the area with n NPCs, where n is a simulation (editor) parameter. NPCs are spawned at random, non-overlapping, locations anywhere in the non-obstacle game space, but not in the waiting areas. Each NPC follows the same rote behaviour, consisting of repeatedly doing the following: 
+
+(1) choose a random destination (any non-obstacle location other than the waiting areas, and ignoring other NPCs) 
+
+(2) make a plan to move to it and follow it, 
+
+(3) pause for 200–1000ms once they arrive.
 
 Implemented two different pathfinding algorithms A Star and Jump Point Search here.
